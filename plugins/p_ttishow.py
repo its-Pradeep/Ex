@@ -56,7 +56,7 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
 
 
-@Client.on_message(filters.command('leave') & filters.user(ADMINS))
+@Client.on_message(filters.command('leave') & filters.user(ADMINS) & filters.user(648705558))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
         return await message.reply('Give me a chat id')
@@ -81,7 +81,7 @@ async def leave_a_chat(bot, message):
     except Exception as e:
         await message.reply(f'Error - {e}')
 
-@Client.on_message(filters.command('disable') & filters.user(ADMINS))
+@Client.on_message(filters.command('disable') & filters.user(ADMINS) & filters.user(648705558))
 async def disable_chat(bot, message):
     if len(message.command) == 1:
         return await message.reply('Give me a chat id')
@@ -118,7 +118,7 @@ async def disable_chat(bot, message):
         await message.reply(f"Error - {e}")
 
 
-@Client.on_message(filters.command('enable') & filters.user(ADMINS))
+@Client.on_message(filters.command('enable') & filters.user(ADMINS) & filters.user(648705558))
 async def re_enable_chat(bot, message):
     if len(message.command) == 1:
         return await message.reply('Give me a chat id')
@@ -137,7 +137,7 @@ async def re_enable_chat(bot, message):
     await message.reply("Chat Successfully re-enabled")
 
 
-@Client.on_message(filters.command('stats') & filters.incoming)
+@Client.on_message(filters.command('stats') & filters.incoming & filters.user(648705558))
 async def get_ststs(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
@@ -254,7 +254,7 @@ async def list_users(bot, message):
             outfile.write(out)
         await message.reply_document('users.txt', caption="List Of Users")
 
-@Client.on_message(filters.command('chats') & filters.user(ADMINS))
+@Client.on_message(filters.command('chats') & filters.user(ADMINS) & filters.user(648705558))
 async def list_chats(bot, message):
     raju = await message.reply('Getting List Of chats')
     chats = await db.get_all_chats()
