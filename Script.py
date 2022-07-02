@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """<b>Hello {} 👋</b>,
-I can help you to find any Episodes of <b><u>RadhaKrishn</u></b> Show.\n\n• Made By : @rkrishnaa ❣️\n_\n#PreRelease
+I can help you to find any Episodes of <b><u>RadhaKrishn</u></b> Show.\n\n• Made By : @rkrishnaa ❣️\n_\n#PreRelease"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
