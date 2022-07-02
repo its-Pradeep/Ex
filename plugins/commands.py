@@ -89,7 +89,7 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["help"]:
         buttons = [[
             InlineKeyboardButton('_', url=f'http://t.me/rkrishnaa')
-            ] #,[
+            ]] #,[
          #   InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
          #   InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
          #   ],[
