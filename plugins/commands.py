@@ -520,3 +520,27 @@ async def save_template(client, message):
     template = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
+    
+    
+#Other
+
+@Client.on_message(filters.command(["start", "start@Pyro_Tg_Bot"]))
+async def start(_, message: Message):
+    if message.chat.type in ['group', 'supergroup']:
+    await message.reply_text(
+        f"""<b>Hi {message.from_user.first_name} 😉️!</b>
+Heya I'm Alive :)
+Made by **@Amalbiju154** for Noob/Beginners Like Him!
+Join **@Animemusicarchive6**""",
+
+        
+@Client.on_message(filters.command(["start", "start@Pyro_Tg_Bot"]))
+async def start(_, message: Message):
+    await message.reply_text(
+        f"""<b>Hi {message.from_user.first_name} 😉️!</b>
+Heya I'm Alive :)
+Made by **@Amalbiju154** for Noob/Beginners Like Him!
+Join **@Animemusicarchive6**""",
+        
+        
+        
