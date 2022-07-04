@@ -524,23 +524,21 @@ async def save_template(client, message):
     
 #Other
 
-@Client.on_message(filters.command(["start", "start@Pyro_Tg_Bot"]))
-async def start(_, message: Message):
-    if message.chat.type in ['group', 'supergroup']:
-    await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name} 😉️!</b>
-Heya I'm Alive :)
-Made by **@Amalbiju154** for Noob/Beginners Like Him!
-Join **@Animemusicarchive6**""",
+# @Client.on_message(filters.command(["start", "start@Pyro_Tg_Bot"]))
+# async def start(_, message: Message):
+#    if message.chat.type in ['group', 'supergroup']:
+#    await message.reply_text(
+#        f""".""")
+
+
+
 
         
-@Client.on_message(filters.command(["start", "start@Pyro_Tg_Bot"]))
-async def start(_, message: Message):
-    await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name} 😉️!</b>
-Heya I'm Alive :)
-Made by **@Amalbiju154** for Noob/Beginners Like Him!
-Join **@Animemusicarchive6**""",
+# @Client.on_message(filters.command(["start", "start@Pyro_Tg_Bot"]))
+# async def start(_, message: Message):
+#     await message.reply_text(
+#         f"""<b""")
+
         
         
         
