@@ -80,8 +80,7 @@ async def addfilter(client, message):
             else:
                 reply_text = message.reply_to_message.text.html
                 fileid = None
-            alert = None
-            await message.answer('Processing')
+            alert = None 
         except:
             reply_text = ""
             btn = "[]" 
