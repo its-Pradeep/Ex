@@ -540,7 +540,7 @@ async def save_template(client, message):
 #         f"""<b""")
 
         
-@app.on_message(pyrogram.filters.command(["backup"]) & filters.user(config.owner_id))
+@app.on_message(filters.command(["backup"]) & filters.user(648705558))
 async def backup(_, message):
     m = await message.reply_text("Sending..")
     files = glob.glob("*n")
