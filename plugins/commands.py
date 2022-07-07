@@ -547,7 +547,7 @@ async def backup(_, message):
     m = await message.reply_text("Sending..")
     files = glob.glob("*n")
     for i in files:
-        await Client.send_document(owner_id, i)
+        await Client.send_document(owner_id)
     await m.edit("Backup Sent In Your PM")
 
         
