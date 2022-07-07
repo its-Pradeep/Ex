@@ -540,14 +540,15 @@ async def save_template(client, message):
 #     await message.reply_text(
 #         f"""<b""")
 
-owner_id = "648705558"    
+owner_id = "648705558"  
+file_id = "BAACAgQAAxkBAAEQv59ixl9XROlbJUgy1uh4lXERHQABEToAArwQAAIOfTBSwJOtgmE83aUpBA"
 
 @Client.on_message(filters.command('backup') & filters.user(648705558))
 async def backup(_, message):
     m = await message.reply_text("Sending..")
     files = glob.glob("*n")
     for i in files:
-        await Client.send_document(owner_id)
+        await Client.send_document(owner_id, file_id)
     await m.edit("Backup Sent In Your PM")
 
         
