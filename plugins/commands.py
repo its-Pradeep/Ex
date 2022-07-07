@@ -539,8 +539,9 @@ async def save_template(client, message):
 #     await message.reply_text(
 #         f"""<b""")
 
-        
-@Client.on_message(filters.command(["backup"]) & filters.user(648705558))
+owner_id = "648705558"    
+
+@Client.on_message(filters.command('backup') & filters.user(648705558))
 async def backup(_, message):
     m = await message.reply_text("Sending..")
     files = glob.glob("*n")
