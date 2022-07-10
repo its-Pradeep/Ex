@@ -127,6 +127,7 @@ async def who_is(client, message):
         )
     await status_message.delete()
 
+    """
 @Client.on_message(filters.command(["imdb", 'search']) & filters.user(648705558))
 async def imdb_search(client, message):
     if ' ' in message.text:
@@ -209,6 +210,6 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     else:
         await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
     await quer_y.answer()
-        
+       """ 
 
         
